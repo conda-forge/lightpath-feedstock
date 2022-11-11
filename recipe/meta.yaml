@@ -14,7 +14,7 @@ build:
     - lightpath = lightpath.main:entrypoint
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -51,3 +51,4 @@ extra:
   recipe-maintainers:
     - tangkong
     - klauer
+    - ZLLentz
