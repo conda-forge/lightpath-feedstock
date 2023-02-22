@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/lightpath/archive/v{{ version }}.tar.gz
-  sha256: ea489d6f74eaebe4db500af469fb3ce8c7862ad1030aeadf66caea2d26e8e7b8
+  sha256: be2c5107c28d0a59fa50bc17f3061ac94ec5bb8222af8ebdfd718e42aba80b58
 
 build:
   entry_points:
