@@ -1,5 +1,5 @@
 {% set name = "lightpath" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/lightpath/archive/v{{ version }}.tar.gz
-  sha256: 94c12a7a79a2f82bcb43c36ef809a0eabdccf6b2889dde5834b2973881dbb0d4
+  sha256: 7c617fb4a13341414ee1fbc91bbb00f7244e5638a63d75b5953d636bc8a97891
 
 build:
   entry_points:
@@ -51,6 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/pcdsdevices
-    - tangkong
-    - klauer
-    - ZLLentz
