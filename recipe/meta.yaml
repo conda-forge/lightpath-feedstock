@@ -17,6 +17,10 @@ requirements:
   host:
     - python >=3.9
 
+test:
+  imports:
+    - lightpath
+
 outputs:
   - name: lightpath-base
     build:
