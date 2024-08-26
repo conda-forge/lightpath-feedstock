@@ -1,8 +1,7 @@
-{% set name = "lightpath" %}
 {% set version = "1.0.4" %}
 
 package:
-  name: {{ name|lower }}
+  name: lightpath-suite
   version: {{ version }}
 
 source:
@@ -12,18 +11,17 @@ source:
 build:
   entry_points:
     - lightpath = lightpath.main:entrypoint
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
   number: 1
 
-test:
-  imports:
-    - lightpath
+requirements:
+  host:
+    - python >=3.9
 
 outputs:
   - name: lightpath-base
     build:
       noarch: python
+      script: {{ PYTHON }} -m pip install . -vv
     requirements:
       host:
         - python >=3.9
@@ -56,6 +54,9 @@ outputs:
         - qtawesome
         - qtpy
         - typhos >=1.0.0
+      test:
+        imports:
+          - lightpath
 
 about:
   home: https://github.com/pcdshub/lightpath
