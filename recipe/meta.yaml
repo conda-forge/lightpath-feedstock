@@ -51,7 +51,7 @@ outputs:
         - setuptools
         - setuptools_scm
       run:
-        - {{ pin_subpackage('lightpath-base', max_pin='x.x') }}
+        - {{ pin_subpackage('lightpath-base', max_pin='x.x.x') }}
         - pydm
         - pyqt >=5
         - qtawesome
