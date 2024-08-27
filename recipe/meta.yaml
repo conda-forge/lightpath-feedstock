@@ -39,8 +39,7 @@ outputs:
         - ophyd
         - prettytable
       run_constrained:
-        - networkx <3.3  # networkx drops py3.9 support with 3.3
-        - numpy <2.0  # until upstream packages update (ophyd)
+        - networkx <3.3  [py<=39]
 
   - name: lightpath
     build:
