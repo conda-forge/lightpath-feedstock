@@ -11,7 +11,7 @@ source:
 build:
   entry_points:
     - lightpath = lightpath.main:entrypoint
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -71,5 +71,6 @@ about:
   summary: Linac Coherent Light Source (LCLS) beamline configuration and control
 
 extra:
+  feedstock-name: lightpath
   recipe-maintainers:
     - conda-forge/pcdsdevices
