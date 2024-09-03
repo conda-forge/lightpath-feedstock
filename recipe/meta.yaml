@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/pcdshub/lightpath/archive/v{{ version }}.tar.gz
-  sha256: 7c617fb4a13341414ee1fbc91bbb00f7244e5638a63d75b5953d636bc8a97891
+  sha256: f327d5c5c9eb1f0199987b41b5a62a981941abd57d2e90d013e1f76a60e8809f
 
 build:
   entry_points:
     - lightpath = lightpath.main:entrypoint
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -71,5 +71,6 @@ about:
   summary: Linac Coherent Light Source (LCLS) beamline configuration and control
 
 extra:
+  feedstock-name: lightpath
   recipe-maintainers:
     - conda-forge/pcdsdevices

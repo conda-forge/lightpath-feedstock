@@ -1,5 +1,5 @@
-About lightpath-suite-feedstock
-===============================
+About lightpath-feedstock
+=========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lightpath-feedstock/blob/main/LICENSE.txt)
 
@@ -34,10 +34,10 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-lightpath-green.svg)](https://anaconda.org/conda-forge/lightpath) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lightpath.svg)](https://anaconda.org/conda-forge/lightpath) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lightpath.svg)](https://anaconda.org/conda-forge/lightpath) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lightpath.svg)](https://anaconda.org/conda-forge/lightpath) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-lightpath--base-green.svg)](https://anaconda.org/conda-forge/lightpath-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lightpath-base.svg)](https://anaconda.org/conda-forge/lightpath-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lightpath-base.svg)](https://anaconda.org/conda-forge/lightpath-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lightpath-base.svg)](https://anaconda.org/conda-forge/lightpath-base) |
 
-Installing lightpath-suite
-==========================
+Installing lightpath
+====================
 
-Installing `lightpath-suite` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `lightpath` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
@@ -123,17 +123,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating lightpath-suite-feedstock
-==================================
+Updating lightpath-feedstock
+============================
 
-If you would like to improve the lightpath-suite recipe or build a new
+If you would like to improve the lightpath recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/lightpath-suite-feedstock are
+Note that all branches in the conda-forge/lightpath-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
