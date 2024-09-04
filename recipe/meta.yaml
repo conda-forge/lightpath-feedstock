@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: lightpath-suite
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/pcdshub/lightpath/archive/v{{ version }}.tar.gz
-  sha256: f327d5c5c9eb1f0199987b41b5a62a981941abd57d2e90d013e1f76a60e8809f
+  sha256: 0cadb7e244f633f5675a2586d61f6cf31419d19f6de064292a7a17e5505ee4d7
 
 build:
   entry_points:
     - lightpath = lightpath.main:entrypoint
-  number: 2
+  number: 0
 
 requirements:
   host:
