@@ -11,7 +11,7 @@ source:
 build:
   entry_points:
     - lightpath = lightpath.main:entrypoint
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,12 +28,12 @@ outputs:
       script: {{ PYTHON }} -m pip install . -vv
     requirements:
       host:
-        - python >=3.9
+        - python {{ python_min }}
         - pip
         - setuptools
         - setuptools_scm
       run:
-        - python >=3.9
+        - python >={{ python_min }}
         - coloredlogs
         - happi >=1.6.0
         - ophyd
@@ -46,7 +46,7 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.9
+        - python {{ python_min }}
         - pip
         - setuptools
         - setuptools_scm
@@ -58,6 +58,8 @@ outputs:
         - qtpy
         - typhos >=1.0.0
       test:
+        requires:
+          - python {{ python_min }}
         imports:
           - lightpath
 
