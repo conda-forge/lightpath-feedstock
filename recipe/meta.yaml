@@ -29,7 +29,7 @@ outputs:
       script: {{ PYTHON }} -m pip install . -vv
     requirements:
       host:
-        - python >={{ python_min }}
+        - python {{ python_min }}
         - pip
         - setuptools
         - setuptools_scm
@@ -47,7 +47,7 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >={{ python_min }}
+        - python {{ python_min }}
         - pip
         - setuptools
         - setuptools_scm
