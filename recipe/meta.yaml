@@ -1,5 +1,4 @@
 {% set version = "1.0.7" %}
-{% set python_min = "3.9" %}
 
 package:
   name: lightpath-suite
@@ -41,6 +40,9 @@ outputs:
         - prettytable
       run_constrained:
         - networkx <3.3  # [py<=39]
+      test:
+        requires:
+          - python {{ python_min }}
 
   - name: lightpath
     build:
@@ -53,6 +55,7 @@ outputs:
         - setuptools_scm
       run:
         - {{ pin_subpackage('lightpath-base', max_pin='x.x.x') }}
+        - python >={{ python_min }}
         - pydm
         - pyqt >=5
         - qtawesome
