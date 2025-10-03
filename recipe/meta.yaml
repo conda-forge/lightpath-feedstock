@@ -11,7 +11,7 @@ source:
 build:
   entry_points:
     - lightpath = lightpath.main:entrypoint
-  number: 0
+  number: 1
 
 requirements:
   host:
