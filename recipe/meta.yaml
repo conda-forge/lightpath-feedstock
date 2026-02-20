@@ -38,8 +38,7 @@ outputs:
         - happi >=1.6.0
         - ophyd
         - prettytable
-      run_constrained:
-        - networkx <3.3  # [py<=39]
+        - networkx <3.3
       test:
         requires:
           - python {{ python_min }}
